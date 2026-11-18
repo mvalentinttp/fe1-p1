@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Permanent+Marker&family=Seaweed+Script&display=swap');
+
+* {
+	margin: 0;
+}
+
+body {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+    background-image: url("../img/bg_circ.jpg");
+    background-size: 100% auto; 
+    background-repeat: repeat;
+}
+
+header {
+	background-color: pink;
+	text-align: center;
+	padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 0 0;
+    gap: 10px;
+}
+
+nav a {
+	text-decoration: none;
+}
+
+nav a:hover {
+	text-decoration: underline;
+}
+
+main {
+	flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+	padding: 10px;
+	max-width:800px;
+	margin: auto;
+}
+
+article {
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
+    border: 1px solid darkgray;
+    filter: drop-shadow(-3px 8px 5px rgba(0, 0, 0, 0.5));
+}
+
+article h2 {
+    text-align: center;
+    font-family: 'Seaweed Script', cursive;
+
+}
+
+article img {
+	width: 100%;
+    border: 1px solid gray;
+}
+
+article div {
+	flex: 1;
+	display: flex;
+    flex-direction: column;
+	align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-family: 'Permanent Marker', cursive;
+}
+
+article a, article a:visited {
+	text-decoration: none;
+    font-family: 'Permanent Marker', cursive;
+    color: red;
+}
+
+article a:hover {
+    text-decoration: underline;
+}
+
+section {
+	background-color: yellow;
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+
+footer {
+  	text-align: center;
+	padding: 20px;
+    background-color: pink;
+}
+
+footer img {
+    width: 250px;
+}
+
+@media (max-width:400px) {
+	main {
+		background-color: blue;
+		grid-template-columns: 1fr ;
+	}
+}
